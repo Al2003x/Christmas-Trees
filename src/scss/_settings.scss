@@ -12,13 +12,11 @@ html {
   height: 100%;
   font-family: var(--font-family, sans-serif);
   -webkit-text-size-adjust: 100%;
+  color: var(--main-color);
 }
 
-.page__body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100%;
-  font-size: 16px;
+.hide {
+  display: none;
 }
 
 img {

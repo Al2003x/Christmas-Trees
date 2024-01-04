@@ -3,10 +3,17 @@
 :root {
   // base
   --font-family: "Cormorant", sans-serif;
-  --content-width: 1170px;
+  --content-width: 1290px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
-  --light-color: #fff;
+  --main-color: #fff;
+  --second-color: #262626;
+  --one-color: #006e55;
+  --two-color: #00654e;
+  --three-color: #005844;
+  --main-bg-color: #005844;
+  --second-bg-color: #c0b487;
+  --trigger-color: #e5ab39;
 }
