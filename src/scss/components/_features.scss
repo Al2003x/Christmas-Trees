@@ -2,41 +2,41 @@
   background-color: var(--second-bg-color);
   padding: 40px 0;
   color: var(--main-color);
-}
 
-.features__list {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
 
-.features__item {
-  flex-basis: 236px;
-  text-align: center;
-  padding-top: 115px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 130%;
-  letter-spacing: 0.04em;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: 100px;
-}
+  &__item {
+    flex-basis: 236px;
+    text-align: center;
+    padding-top: 115px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100px;
+  }
 
-.features__item_one {
-  background-image: url("../img/tree.svg");
-}
+  &__item_one {
+    background-image: url("../img/tree.svg");
+  }
 
-.features__item_two {
-  background-image: url("../img/christmas-decorations.svg");
-}
+  &__item_two {
+    background-image: url("../img/christmas-decorations.svg");
+  }
 
-.features__item_three {
-  background-image: url("../img/flowers.svg");
-}
+  &__item_three {
+    background-image: url("../img/flowers.svg");
+  }
 
-.features__item_four {
-  background-image: url("../img/delivery-truck.svg");
+  &__item_four {
+    background-image: url("../img/delivery-truck.svg");
+  }
 }
 
 @media (max-width: 1200px) {
