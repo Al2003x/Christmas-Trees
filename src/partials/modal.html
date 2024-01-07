@@ -1,0 +1,22 @@
+<div class="overlay overlay_active">
+  <div class="modal">
+    <button class="modal__close">
+      <svg class="modal__close-svg">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <h2 class="modal__title">Оформить заказ</h2>
+    <form action="https://jsonplaceholder.typicode.com/posts" class="modal__form" method="post">
+      <label class="modal__label">ФИО
+        <input type="text" name="bio" required class="modal__input" placeholder="Введите ваше ФИО">
+      </label>
+      <label class="modal__label modal__label-last">
+        <input type="tel" name="tel" required class="modal__input" placeholder="Введите ваш номер телефона">
+      </label>
+
+      <input type="text" class="modal__hidden">
+      
+      <button class="modal__button">Заказать звонок</button>
+    </form>
+  </div>
+</div>
