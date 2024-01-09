@@ -1,67 +1,67 @@
-const getRandomIntInclusive = (n, m) => {
-  const min = Math.min(n,m);
-  const max = Math.max(n,m);
-  return Math.floor(Math.random() * (max - min + 1) + min);
-}
+// const getRandomIntInclusive = (n, m) => {
+//   const min = Math.min(n,m);
+//   const max = Math.max(n,m);
+//   return Math.floor(Math.random() * (max - min + 1) + min);
+// }
 
-const createSnow = (min, max, sat) => {
+// const createSnow = (min, max, sat) => {
 
-  const style = document.createElement('style');
-  document.head.append(style);
+//   const style = document.createElement('style');
+//   document.head.append(style);
 
-  style.textContent = `
+//   style.textContent = `
 
-  body {
-    position: relative;
-  }
+//   body {
+//     position: relative;
+//   }
 
-  .snow {
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    top: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-    pointer-events: none;
-    animation-name: fall;
-    animation-timing-function: linear;
-    z-index: 500;
-  }
+//   .snow {
+//     position: fixed;
+//     width: 20px;
+//     height: 20px;
+//     top: 20px;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     pointer-events: none;
+//     animation-name: fall;
+//     animation-timing-function: linear;
+//     z-index: 500;
+//   }
 
-  @keyframes fall {
-    100% {
-      transform: translateY(100vh)
-    }
-  }
+//   @keyframes fall {
+//     100% {
+//       transform: translateY(100vh)
+//     }
+//   }
 
-  `;
+//   `;
 
-  const count = 4;
+//   const count = 4;
 
-  const createSnowItem = () => {
-    console.log(1)
-    const snowItem = document.createElement('div');
-    snowItem.classList.add('snow');
+//   const createSnowItem = () => {
+//     console.log(1)
+//     const snowItem = document.createElement('div');
+//     snowItem.classList.add('snow');
 
-    const time = getRandomIntInclusive(min, max);
+//     const time = getRandomIntInclusive(min, max);
 
-    snowItem.style.cssText = `
-    left: ${getRandomIntInclusive(0, 100)}%;
-    background-image: url("img/snow/snowflake${getRandomIntInclusive(1, count)}.svg");
-    animation-duration: ${time}s;
-    `;
+//     snowItem.style.cssText = `
+//     left: ${getRandomIntInclusive(0, 100)}%;
+//     background-image: url("img/snow/snowflake${getRandomIntInclusive(1, count)}.svg");
+//     animation-duration: ${time}s;
+//     `;
 
-    document.body.append(snowItem);
+//     document.body.append(snowItem);
 
-    setTimeout(() => {
-    snowItem.remove()
-    }, time * 1000)
-  }
+//     setTimeout(() => {
+//     snowItem.remove()
+//     }, time * 1000)
+//   }
 
-  setInterval(createSnowItem, sat);
-}
+//   setInterval(createSnowItem, sat);
+// }
 
-createSnow(5, 20, 300);
+// createSnow(5, 20, 300);
 
 
 
